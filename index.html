@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Diga's Way</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#231043",
+                    "on-surface": "#e4e1e6",
+                    "surface-bright": "#39393c",
+                    "surface-container": "#1f1f22",
+                    "tertiary-fixed-dim": "#d2bcfa",
+                    "secondary-fixed": "#ffdbd0",
+                    "on-surface-variant": "#d1c2d2",
+                    "outline": "#9a8c9b",
+                    "secondary-fixed-dim": "#f5b9a6",
+                    "tertiary-container": "#7b679f",
+                    "on-tertiary-fixed-variant": "#4f3d72",
+                    "primary-fixed": "#f9d8ff",
+                    "on-secondary-fixed-variant": "#663c2e",
+                    "on-primary-fixed-variant": "#6e208c",
+                    "surface-container-high": "#2a2a2d",
+                    "tertiary-fixed": "#ebddff",
+                    "on-error": "#690005",
+                    "inverse-surface": "#e4e1e6",
+                    "on-tertiary-container": "#fbf4ff",
+                    "on-secondary": "#4c261a",
+                    "on-secondary-container": "#e6ab99",
+                    "surface-dim": "#131316",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-lowest": "#0e0e11",
+                    "secondary": "#f5b9a6",
+                    "inverse-on-surface": "#303033",
+                    "on-primary-fixed": "#320046",
+                    "error": "#ffb4ab",
+                    "primary-container": "#9d50bb",
+                    "primary": "#edb1ff",
+                    "outline-variant": "#4e4350",
+                    "inverse-primary": "#883ca6",
+                    "primary-fixed-dim": "#edb1ff",
+                    "on-primary-container": "#fff3fd",
+                    "error-container": "#93000a",
+                    "surface-container-highest": "#353438",
+                    "tertiary": "#d2bcfa",
+                    "surface": "#131316",
+                    "on-tertiary": "#38265a",
+                    "surface-tint": "#edb1ff",
+                    "on-secondary-fixed": "#321207",
+                    "secondary-container": "#693e30",
+                    "on-background": "#e4e1e6",
+                    "surface-container-low": "#1b1b1e",
+                    "background": "#131316",
+                    "surface-variant": "#353438",
+                    "on-primary": "#520070"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "unit": "4px",
+                    "container-max": "1280px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Zain"],
+                    "body-lg": ["Zain"],
+                    "label-md": ["Zain"],
+                    "display-lg-mobile": ["Zain"],
+                    "caption": ["Zain"],
+                    "headline-lg": ["Zain"],
+                    "body-md": ["Zain"],
+                    "display-lg": ["Zain"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "700"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "fontWeight": "800"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "0px", "fontWeight": "800"}]
+            }
+          },
+        },
+      }
+    </script>
+<link rel="stylesheet" href="style.css">
+<script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body class="font-body-md text-on-surface bg-background selection:bg-primary/30">
+<div id="password-screen" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background px-4 sm:px-margin-mobile">
+    <div class="glass-panel w-full max-w-[360px] sm:max-w-md mx-auto p-6 sm:p-8 md:p-12 rounded-3xl sm:rounded-[3rem] border-2 border-primary/30 text-center" style="background:rgba(157,80,187,0.15);backdrop-filter:blur(24px)">
+        <span class="material-symbols-outlined text-primary text-5xl sm:text-6xl md:text-7xl mb-4 sm:mb-6 inline-block" style="font-variation-settings:'FILL'1">lock</span>
+        <h2 class="font-display-lg text-[28px] sm:text-display-lg-mobile md:text-display-lg text-white mb-1 sm:mb-2">Diga's Way</h2>
+        <p class="font-body-md sm:font-body-lg text-body-md sm:text-body-lg text-on-surface-variant mb-6 sm:mb-8 px-2">اكتب الباسوورد عشان تفتح رواية بطل مجهول</p>
+        <input id="password-input" type="password" placeholder="أدخلي كلمة السر" class="w-full px-5 sm:px-6 py-3 sm:py-4 rounded-xl sm:rounded-2xl bg-white/5 border-2 border-primary/30 text-white text-base sm:text-body-lg text-center outline-none focus:border-primary transition-colors mb-3 sm:mb-4" style="font-family:'Zain',sans-serif" autofocus>
+        <button id="password-btn" class="w-full bg-primary-container text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-headline-md text-lg sm:text-headline-md glow-button hover:scale-[1.02] active:scale-95 transition-all">دخول</button>
+        <p id="password-error" class="font-body-md text-body-md text-error mt-3 sm:mt-4 hidden">كلمة السر خطأ، حاولي مرة أخرى</p>
+    </div>
+</div>
+<main id="main-content" class="relative pt-12 overflow-hidden hidden">
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col items-center justify-center text-center px-margin-mobile relative">
+<div class="max-w-3xl space-y-6 md:space-y-8 z-10">
+<div class="animate-float">
+<span class="material-symbols-outlined text-primary text-5xl md:text-7xl mb-4" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg leading-tight text-white">قصة بطل<br/><span class="text-primary-fixed-dim">قصة عن الإبداع الإصرار</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto leading-relaxed">أهلا, أنا الراوي جاي الخصلك قصة من النجاح لبطل حقيقي تعب وصدق في حلمه وحققه بطل وثق بالله ثم مضى قدماَ لهدفه انا مش البطل للقصة دي بل بطلها انسان مميز وغالي علينا كلنا وانا دلوقتي قررت اوثق اللي حصل في قصة بطل محدش كان واخد باله منها</p>
+<div class="flex flex-row-reverse gap-4 justify-center mt-8">
+<button onclick="document.getElementById('timeline').scrollIntoView({behavior:'smooth'})" class="bg-primary-container text-white px-10 py-5 rounded-full font-headline-md text-headline-md glow-button flex items-center gap-3 active:scale-95">
+<span class="material-symbols-outlined">auto_awesome</span>
+                    ابدأ الرحلة
+                </button>
+</div>
+</div>
+<!-- Decorative Background Elements -->
+<div class="absolute top-1/4 -right-20 w-96 h-96 bg-primary/10 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="absolute bottom-1/4 -left-20 w-96 h-96 bg-secondary/10 blur-[120px] rounded-full pointer-events-none"></div>
+</section>
+<!-- Reimaged Dynamic Timeline Section -->
+<section class="py-16 md:py-32 relative max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop min-h-[2000px]" id="timeline">
+<!-- Connecting Line Decorations (Simulated Path) -->
+<div class="absolute inset-0 flex justify-center pointer-events-none opacity-20">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 1000">
+<defs>
+<lineargradient id="line-gradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#9d50bb"></stop>
+<stop offset="50%" stop-color="#f5b9a6"></stop>
+<stop offset="100%" stop-color="#edb1ff"></stop>
+</lineargradient>
+</defs>
+<path d="M50,0 C80,200 20,400 50,600 C80,800 20,1000 50,1200" fill="none" stroke="url(#line-gradient)" stroke-width="0.5"></path>
+</svg>
+</div>
+<div class="space-y-64 relative z-10" id="timeline-cards"></div>
+</section>
+<!-- Moments Gallery Section -->
+<section class="py-16 md:py-32 relative max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop" id="gallery">
+<div class="text-center mb-12 md:mb-16">
+<h3 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-4">أوقات متتنسيش</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">مش انا بس اللي شاهد عالرحلة دي لا كمان في صور قررت تشارك معايا شهادتي عالرحلة دي</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5" id="gallery-grid"></div>
+</section>
+
+<!-- Reflection Section -->
+<section class="py-16 md:py-24 relative max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop" id="reflection">
+<div class="reveal glass-panel max-w-4xl mx-auto p-8 md:p-16 rounded-[3rem] border-2 border-primary/30 text-center" style="background:rgba(157,80,187,0.2);backdrop-filter:blur(24px)">
+<span class="material-symbols-outlined text-primary text-5xl md:text-6xl mb-6 inline-block" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<p class="font-headline-md text-headline-md text-on-surface-variant leading-relaxed md:leading-[2]">
+    أخيرا حاولت الخص ليك رحلة طويييييييييييلة جدا في شوية فيديوهات اتصورت على مدار شهور عديدة طبعا مش هعرف اوصل كل اللي حست بيه بطلت قصتنا خديجة او ديجا فعلا تعبت وفعلا طلعت قدها ومخبيتش ظن اهلها ولا ظنها في نفسها أبدا وأنا عملت الموثع البسيط ليكون شاهدا على جميع الأحداث اللي مرت بيها ديجا ويكون الهام لناس كثير ممكن تبقى خايفة من موضوع معين المسيرة دي بتوصل رسالة ان مفيش حاجة مستحيلة
+</p>
+<div class="mt-8 h-1 w-24 mx-auto bg-gradient-to-l from-primary via-secondary to-tertiary rounded-full"></div>
+<p class="font-body-lg text-body-lg text-secondary mt-6">فخورين بيكي جدا يا ديجا</p>
+</div>
+</section>
+
+<!-- Grand Finale Section (Preserved) -->
+<section class="py-20 md:py-40 relative flex items-center justify-center overflow-hidden" id="finale">
+<div class="absolute inset-0 pointer-events-none" id="confetti-container"></div>
+<!-- Decorative Glows -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 blur-[160px] rounded-full pointer-events-none"></div>
+<div class="relative z-10 text-center space-y-10 px-margin-mobile">
+<h3 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]">نهاية المجهود العظيم ده</h3>
+<div class="relative inline-block group">
+<div class="absolute inset-0 bg-primary blur-[80px] opacity-20 group-hover:opacity-40 transition-opacity duration-1000"></div>
+    <div class="glass-panel px-6 sm:px-12 md:px-16 py-8 sm:py-10 rounded-3xl sm:rounded-[5rem] border-2 border-primary/30 relative overflow-hidden shadow-2xl">
+<div class="flex flex-col items-center">
+<span class="text-6xl sm:text-8xl md:text-[10rem] font-black text-white tracking-tighter leading-none" id="counter">٠</span>
+<div class="h-1 w-full sm:h-1.5 bg-gradient-to-l from-transparent via-secondary to-transparent my-4 sm:my-6"></div>
+</div>
+</div>
+</div>
+<div class="max-w-2xl mx-auto">
+<p class="font-headline-md text-headline-md text-on-surface-variant leading-relaxed">أنتِ فخرنا يا ديجا يعلم الله قد ايه الراوي فرحان بهذه النتيجة ومش الراوي بس بل كل الناس ربنا يخليكي لينا ويوفقك لكل اللي بتحبيه يا أشطر ديجا في العالم</p>
+</div>
+<button class="bg-white/5 hover:bg-white/10 backdrop-blur-xl text-white px-12 py-5 rounded-full font-headline-md text-headline-md transition-all border border-white/20 flex items-center gap-4 mx-auto mt-16 group active:scale-95 shadow-lg" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<span class="material-symbols-outlined group-hover:-translate-y-2 transition-transform duration-500">arrow_upward</span>
+                عيد من جديد
+            </button>
+</div>
+</section>
+</main>
+<script src="script.js"></script>
+<script>
+const password = 'DigaThePrincess';
+const input = document.getElementById('password-input');
+const btn = document.getElementById('password-btn');
+const error = document.getElementById('password-error');
+const screen = document.getElementById('password-screen');
+const content = document.getElementById('main-content');
+
+function checkPassword() {
+    if (input.value === password) {
+        screen.style.display = 'none';
+        content.classList.remove('hidden');
+        document.body.style.overflow = '';
+        appUnlocked = true;
+        onYouTubeIframeAPIReady();
+    } else {
+        error.classList.remove('hidden');
+        input.value = '';
+        input.focus();
+    }
+}
+
+btn.addEventListener('click', checkPassword);
+input.addEventListener('keydown', (e) => { if (e.key === 'Enter') checkPassword(); });
+</script>
+</body></html>
